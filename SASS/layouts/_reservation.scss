@@ -1,0 +1,25 @@
+.reservation {
+    padding: 20px;
+    text-align: center;
+    & h1 {
+      font-weight: bold;
+      margin: 0;
+    }
+    & p {
+      font-weight: 300;
+    }
+    & button {
+      padding: 0;
+      border-radius: 20px;
+      background: linear-gradient(#ff79da, #9356dc);
+      color: white;
+      border: none;
+      font-size: 15px;
+      box-shadow: 0 1px 2px 1px #686868;
+      cursor: pointer;
+      height: 40px;
+      width: 200px;
+    }
+    
+  }
+  

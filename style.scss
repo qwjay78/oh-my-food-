@@ -1,69 +1,57 @@
 /*==principal sheet*/
+@import "./sass/base.scss" ;
+@import "./sass/layouts/header" ;
+@import "./sass/layouts/location.scss";
+@import "./sass/layouts/reservation";
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+$color-primary: #9356dc;
 
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  margin: 0;
-}
-
-.page-sizing {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  height: 110px;
-  align-items: center;
-}
-
-header img {
-  width: 60%;
-  max-width: 250px;
-}
-
-.location {
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  background-color: #f3f3f3;
-  gap: 10px;
-  border-top: 2px solid lightgrey;
-  box-shadow: 0 -5px 5px -5px lightgrey;
-  height: 65px;
-  align-items: center;
-}
-
-.reservation {
+.tuto{
   padding: 20px;
-  text-align: center;
-}
-
-.reservation h1 {
-  font-weight: bold;
-  margin: 0;
-}
-
-.reservation p {
-  font-weight: 300;
-}
-
-.reservation button {
-  padding: 0;
-  border-radius: 20px;
-  background: linear-gradient(#ff79da, #9356dc);
-  color: white;
-  border: none;
-  font-size: 15px;
-  box-shadow: 0 1px 2px 1px #686868;
-  cursor: pointer;
-  height: 40px;
-  width: 200px;
+  counter-reset: steps;
+  &__element{
+    border-radius: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 13%);
+    &__content{
+      display: flex;
+      gap: 20px;
+      padding-left: 30px;
+    }
+    &::before{
+      border-radius: 100px;
+      counter-increment: steps;
+      content: counter(steps) " ";
+      background-color: $color-primary;
+      height: 24px;
+      width: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: absolute;
+      left: 10px;
+    }
+    &:hover{
+      background-color: lighten($color: $color-primary, $amount: 36%);
+        i{
+          color: $color-primary;
+        }
+    }
+  }
+  &__list{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__text{
+    font-weight: bold;
+  }
+  & i{
+    color: #7e7e7e;
+  } 
 }
