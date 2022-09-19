@@ -1,7 +1,11 @@
 /*==principal sheet*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
+}
+
+main {
   font-family: "Roboto", sans-serif;
 }
 
@@ -113,7 +117,7 @@ header img {
 }
 
 .restaurants {
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   background-color: #f6f6f6;
 }
 .restaurants img {
@@ -157,6 +161,28 @@ header img {
   display: flex;
   width: 88%;
   justify-content: space-between;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #353535;
+  color: white;
+}
+.footer__logo {
+  font-family: "shrikhand", sans-serif;
+  font-size: 18px;
+}
+.footer__list {
+  font-family: "roboto", sans-serif;
+  padding: 0;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+.footer li {
+  list-style-type: none;
+  padding-bottom: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

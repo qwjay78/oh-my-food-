@@ -8,7 +8,7 @@
 $color-tertiary: #99E2D0;
 
 .restaurants{
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   background-color: #f6f6f6;
   & img{
     height: 200px;
@@ -51,5 +51,27 @@ $color-tertiary: #99E2D0;
     display: flex;
     width: 88%;
     justify-content: space-between;
+  }
+}
+
+.footer{
+  padding: 20px;
+  background-color: #353535;
+  color: white;
+  &__logo{
+  font-family: "shrikhand", sans-serif;
+  font-size: 18px;
+  }
+  &__list{
+    font-family: "roboto", sans-serif;
+    padding: 0;
+  }
+  &__link{
+    text-decoration: none;
+    color: white;
+  }
+  & li{
+    list-style-type: none;
+    padding-bottom: 2px;
   }
 }
