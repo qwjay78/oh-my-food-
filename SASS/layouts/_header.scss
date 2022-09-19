@@ -1,4 +1,4 @@
-header {
+.header {
     display: flex;
     justify-content: center;
     height: 110px;
@@ -6,6 +6,7 @@ header {
     & img {
         width: 60%;
         max-width: 250px;
-      }
+    }
+   
   }
   

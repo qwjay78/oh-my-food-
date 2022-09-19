@@ -1,0 +1,21 @@
+.footer{
+    padding: 20px;
+    background-color: #353535;
+    color: white;
+    &__logo{
+    font-family: "shrikhand", sans-serif;
+    font-size: 18px;
+    }
+    &__list{
+      font-family: "roboto", sans-serif;
+      padding: 0;
+    }
+    &__link{
+      text-decoration: none;
+      color: white;
+    }
+    & li{
+      list-style-type: none;
+      padding-bottom: 2px;
+    }
+  }
