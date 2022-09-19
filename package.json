@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon projet openclassrooms numéro 3 (ohmyfood)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qwjay78/oh-my-food-.git"
+  },
+  "author": "Joana Lopes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qwjay78/oh-my-food-/issues"
+  },
+  "homepage": "https://github.com/qwjay78/oh-my-food-#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}
