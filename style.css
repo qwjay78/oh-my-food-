@@ -203,11 +203,58 @@ body {
   background-color: #f6f6f6;
   position: relative;
 }
+.menu__list {
+  padding: 20px;
+}
 .menu__head {
   display: flex;
   font-family: "shrikhand";
   justify-content: space-around;
   align-items: baseline;
+}
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.menu__element {
+  border-radius: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.menu__dish, .menu__detail {
+  margin: 0;
+}
+.menu__confirmation {
+  background-color: #99E2D0;
+  margin: -16px -80px -16px 16px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.menu__subtitle {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 4px;
+  font-weight: 400;
+}
+.menu__subtitle:after {
+  content: "";
+  width: 45px;
+  height: 4px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.menu__price {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

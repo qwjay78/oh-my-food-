@@ -19,16 +19,64 @@
     object-fit: cover;
 }
 
+
 .menu{
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   position: relative;
+  &__list{
+    padding: 20px;
+  }
   &__head{
     display: flex;
     font-family: 'shrikhand';
     justify-content: space-around;
     align-items: baseline
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  &__element{
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 10%);
+  }
+  &__dish,&__detail{
+    margin: 0;
+  }
+  &__confirmation{
+    background-color: $color-tertiary;
+    margin: -16px -80px -16px 16px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+  }
+  &__subtitle{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 4px;
+    font-weight: 400;
+    &:after{
+      content: "";
+    width: 45px;
+    height: 4px;
+    background-color: $color-tertiary;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+  }
+  &__price{
+    font-weight: bold;
   }
 
 }
