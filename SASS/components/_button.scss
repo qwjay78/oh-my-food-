@@ -1,0 +1,19 @@
+.button{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__command{
+      padding: 0;
+    border-radius: 20px;
+    background: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    border: none;
+    box-shadow: 0 1px 2px 1px #686868;
+    cursor: pointer;
+    height: 45px;
+    font-size: 17.5px;
+    width: 140px;
+    }
+  }

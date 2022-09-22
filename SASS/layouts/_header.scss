@@ -7,6 +7,17 @@
         width: 60%;
         max-width: 250px;
     }
-   
+   &--restaurant{
+    flex-direction: row-reverse;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    & img{
+        height: 40px;
+    }
+   }
   }
+
   

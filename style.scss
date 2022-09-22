@@ -6,140 +6,14 @@
 @import "./SASS/layouts/tuto";
 @import "./SASS/layouts/restaurants";
 @import "./SASS/layouts/footer";
-
-@keyframes quarterspin{
-  0%{
-    transform: rotate(-270deg);
-  }
-  100%{
-    transform: rotate(0);
-  }
-}
-
-.header.palette{
-  flex-direction: row-reverse;
-  gap: 50px;
-}
-
-.image-resto{
-  max-width: 100%;
-    max-height: 32rem;
-    width: 100%;
-    object-fit: cover;
-}
+@import "./SASS/utils/_animations.scss";
+@import "./SASS/pages/image-resto";
+@import "./SASS/layouts/menus";
+@import "./SASS/components/button";
 
 
-.menu{
-  margin-top: -4rem;
-  border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
-  position: relative;
-  &__list{
-    padding: 20px;
-  }
-  &__head{
-    display: flex;
-    font-family: 'shrikhand';
-    justify-content: space-around;
-    align-items: baseline
-  }
-  &__content{
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-  }
-  &__element{
-    border-radius: 10px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    box-shadow: 4px 4px 8px rgb(0 0 0 / 10%);
-    overflow: hidden;
-    cursor: pointer;
-    &:hover {
-      & .menu__confirmation{
-      margin-right: 0 ;
-      } 
-      & .menu__icon i{
-        animation: quarterspin 0.5s ease-in-out;
-      }
-    }
-  }
-  &__dish,&__detail{
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  &__confirmation{
-    background-color: $color-tertiary;
-    width: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: .5s;
-    height: 60px;
-    border-radius: 0 10px 10px 0;
-    margin-right: -64px;
-  }
-  &__subtitle{
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 4px;
-    font-weight: 400;
-    &:after{
-      content: "";
-    width: 45px;
-    height: 4px;
-    background-color: $color-tertiary;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    }
-  }
-  &__price{
-    font-weight: bold;
-    padding: 10px;
-  }
-  &__text{
-    padding: 10px;
-  }
-  &__icon{
-    border-radius: 100px;
-    background-color: white;
-    color: $color-tertiary;
-    height: 25px;
-    width: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &__wrap{
-    display: flex;
-    align-items: center;
-  }
-  }
 
-  .button{
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &__command{
-      padding: 0;
-    border-radius: 20px;
-    background: linear-gradient(#ff79da, #9356dc);
-    color: white;
-    border: none;
-    box-shadow: 0 1px 2px 1px #686868;
-    cursor: pointer;
-    height: 45px;
-    font-size: 17.5px;
-    width: 140px;
-    }
-  }
+
+
 
 
