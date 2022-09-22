@@ -185,6 +185,14 @@ body {
   padding-bottom: 2px;
 }
 
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .header.palette {
   flex-direction: row-reverse;
   gap: 50px;
@@ -222,21 +230,34 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: white;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu__element:hover .menu__confirmation {
+  margin-right: 0;
+}
+.menu__element:hover .menu__icon i {
+  animation: quarterspin 0.5s ease-in-out;
 }
 .menu__dish, .menu__detail {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__confirmation {
   background-color: #99E2D0;
-  margin: -16px -80px -16px 16px;
   width: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition-duration: 0.5s;
+  height: 60px;
+  border-radius: 0 10px 10px 0;
+  margin-right: -64px;
 }
 .menu__subtitle {
   text-transform: uppercase;
@@ -255,6 +276,44 @@ body {
 }
 .menu__price {
   font-weight: bold;
+  padding: 10px;
+}
+.menu__text {
+  padding: 10px;
+}
+.menu__icon {
+  border-radius: 100px;
+  background-color: white;
+  color: #99E2D0;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button__command {
+  padding: 0;
+  border-radius: 20px;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  border: none;
+  box-shadow: 0 1px 2px 1px #686868;
+  cursor: pointer;
+  height: 45px;
+  font-size: 17.5px;
+  width: 140px;
 }
 
 /*# sourceMappingURL=style.css.map */
