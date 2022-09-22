@@ -46,3 +46,17 @@ $color-tertiary: #99E2D0;
     justify-content: space-between;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .restaurants{
+    &__list{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 36px;
+      grid-row-gap: 36px;
+    }
+    &__description{
+      width: 45%;
+    }
+  }
+}

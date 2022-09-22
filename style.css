@@ -127,6 +127,22 @@ body {
   color: #7e7e7e;
 }
 
+@media screen and (min-width: 1024px) {
+  .tuto__title {
+    margin-left: 30px;
+  }
+  .tuto__list {
+    justify-content: space-evenly;
+    flex-direction: initial;
+  }
+  .tuto__element {
+    width: 30%;
+  }
+  .tuto__element:before {
+    left: initial;
+    margin-left: -10px;
+  }
+}
 .restaurants {
   padding: 20px 20px 40px 20px;
   background-color: #f6f6f6;
@@ -174,6 +190,17 @@ body {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 1024px) {
+  .restaurants__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 36px;
+    grid-row-gap: 36px;
+  }
+  .restaurants__description {
+    width: 45%;
+  }
+}
 .footer {
   padding: 20px;
   background-color: #353535;
@@ -223,8 +250,9 @@ body {
 .menu__head {
   display: flex;
   font-family: "shrikhand";
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
+  padding-inline: 20px;
 }
 .menu__content {
   display: flex;
@@ -248,7 +276,7 @@ body {
 .menu__element:hover .menu__icon i {
   animation: quarterspin 0.5s ease-in-out;
 }
-.menu__dish, .menu__detail {
+.menu__dish, .menu__text, .menu__detail {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -302,6 +330,16 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .menu__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  .menu__section {
+    width: 30%;
+  }
+}
 .button {
   height: 150px;
   display: flex;
@@ -320,6 +358,44 @@ body {
   height: 45px;
   font-size: 17.5px;
   width: 140px;
+}
+
+@media screen and (min-width: 1024px) {
+  .tuto__title {
+    margin-left: 30px;
+  }
+  .tuto__list {
+    justify-content: space-evenly;
+    flex-direction: initial;
+  }
+  .tuto__element {
+    width: 30%;
+  }
+  .tuto__element:before {
+    left: initial;
+    margin-left: -10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 36px;
+    grid-row-gap: 36px;
+  }
+  .restaurants__description {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  .menu__section {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

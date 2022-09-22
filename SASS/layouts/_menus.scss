@@ -9,8 +9,9 @@
     &__head{
       display: flex;
       font-family: 'shrikhand';
-      justify-content: space-around;
-      align-items: baseline
+      justify-content: space-between;
+      align-items: baseline;
+      padding-inline: 20px;
     }
     &__content{
       display: flex;
@@ -36,7 +37,7 @@
         }
       }
     }
-    &__dish,&__detail{
+    &__dish,&__text,&__detail{
       margin: 0;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -89,4 +90,18 @@
       display: flex;
       align-items: center;
     }
+    }
+
+    @media screen and (min-width:1024px) {
+      .menu{
+        &__list{
+          display: flex;
+          gap: 30px;
+          justify-content: center;
+        }
+        &__section{
+          width: 30%;
+        }
+    
+      }
     }

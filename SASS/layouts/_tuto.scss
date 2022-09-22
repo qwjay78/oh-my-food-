@@ -49,3 +49,22 @@ $color-primary: #9356dc;
     color: #7e7e7e;
   } 
 }
+
+@media screen and (min-width:1024px) {
+  .tuto{
+    &__title{
+      margin-left: 30px;
+    }
+    &__list{
+      justify-content: space-evenly;
+      flex-direction: initial;
+    }
+    &__element{
+      width: 30%;
+      &:before{
+        left: initial;
+        margin-left: -10px;
+      }
+    }
+  }
+}
