@@ -10,54 +10,11 @@
 @import "./SASS/pages/image-resto";
 @import "./SASS/layouts/menus";
 @import "./SASS/components/button";
+@import "./SASS/pages/loader";
 
 
-@media screen and (min-width:1024px) {
-  .tuto{
-    &__title{
-      margin-left: 30px;
-    }
-    &__list{
-      justify-content: space-evenly;
-      flex-direction: initial;
-    }
-    &__element{
-      width: 30%;
-      &:before{
-        left: initial;
-        margin-left: -10px;
-      }
-    }
-  }
-}
 
-@media screen and (min-width: 1024px) {
-  .restaurants{
-    &__list{
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 36px;
-      grid-row-gap: 36px;
-    }
-    &__description{
-      width: 45%;
-    }
-  }
-}
 
-@media screen and (min-width:1024px) {
-  .menu{
-    &__list{
-      display: flex;
-      gap: 30px;
-      justify-content: center;
-    }
-    &__section{
-      width: 30%;
-    }
-
-  }
-}
 
 
 
