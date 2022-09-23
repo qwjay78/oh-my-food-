@@ -1,4 +1,5 @@
 $color-tertiary: #99E2D0;
+$color-secondary: #ff79da;
 
 .restaurants{
   padding: 20px 20px 40px 20px;
@@ -44,6 +45,22 @@ $color-tertiary: #99E2D0;
     display: flex;
     width: 88%;
     justify-content: space-between;
+  }
+  &__heart{
+    & .card__like.fa-2x.fa-heart.far.menu__like.menu__like--noBg{
+      position: absolute;
+    }
+    & .card__like.fa-2x.fa-heart.fas.menu__like.menu__like--noBg{
+      color: transparent;
+    }
+    &:hover{
+      & .card__like.fa-2x.fa-heart.fas.menu__like.menu__like--noBg{
+        background-image: linear-gradient($color-primary,$color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        position: relative;
+      } 
+    }
   }
 }
 
