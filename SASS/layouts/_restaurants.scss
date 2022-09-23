@@ -15,6 +15,7 @@ $color-secondary: #ff79da;
     text-decoration: none;
     background-color: white;
     color: black;
+    position: relative;
   }
   & h3{
     margin: 0;
@@ -40,10 +41,8 @@ $color-secondary: #ff79da;
     padding: 8px;
   }
   &__description{
-    position: absolute;
     padding: 10px;
     display: flex;
-    width: 88%;
     justify-content: space-between;
   }
   &__heart{
@@ -71,9 +70,6 @@ $color-secondary: #ff79da;
       grid-template-rows: repeat(2, 1fr);
       grid-column-gap: 36px;
       grid-row-gap: 36px;
-    }
-    &__description{
-      width: 45%;
     }
   }
 }
